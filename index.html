@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin.pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/st.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="login">
+      <h1 class="title">Добро пожаловать</h1>
+      <form action="source/home.php" class="windows-login">
+        <span class="title enter">Вход</span>
+        <div class="input-field">
+          <input class="input" id="text" type="text" placeholder="Login">
+          <p id="pone" class="red-text">*данные введены неверно </p>
+        </div>
+
+        <div class="input-field last">
+          <input class="input" id="password" type="password" placeholder="Password">
+          <p id="ptwo" class="red-text">*данные введены неверно </p>
+        </div>
+        <button type="submit" id="btn" class="btn btn-auth">Войти
+          <!-- <a href="source/home.php" class="a-btn">Войти</a> -->
+        </button>
+      </form>
+      <button id="nuans" class="nuans">Нюанс</button>
+      <p class="ro">P.S. пока только root<br>
+        Логин: root<br>
+        Пароль: 12345
+      </p>
+    </div>
+  </div>
+  <script>
+    nuans.onclick = function () {
+      if (document.querySelector(".ro").style.display == "block") {
+        document.querySelector(".ro").style.display = "none";
+      } else {
+        document.querySelector(".ro").style.display = "block";
+      }
+    };
+
+    btn.onclick = function () {
+      let te = document.querySelector("#text");
+      let pas = document.querySelector("#password");
+      let teStr = te.value;
+      let pasStr = pas.value;
+
+      let text = new String(teStr);
+      let password = new String(pasStr);
+
+      let mask1=new RegExp("^[r][o][o][t]{1,4}$");
+      let mask2=new RegExp("^[1][2][3][4][5]{1,5}$"); 
+
+      if (mask1.test(text) & mask2.test(password)) {
+        return true;
+      } else if (!(mask1.test(text))){
+        document.querySelector("#pone").style.display = "block";
+        event.preventDefault();
+      } else if (!(mask2.test(password))){
+        document.querySelector("#ptwo").style.display = "block";
+        event.preventDefault();
+    }
+  }
+  </script>
+</body>
+
+</html>

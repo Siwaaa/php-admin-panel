@@ -1,0 +1,296 @@
+body, h1, ul, div, p, ul, ol, li, a, pre {
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+} /* убирает все отступы по умолчанию*/
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #f7f8fc;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.login{
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.title {
+  color: #0c005c;
+  margin-bottom: 30px;
+}
+
+.windows-login{
+  background-color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 35px -5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 4px 35px -5px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 35px -5px rgba(0,0,0,0.1);
+}
+
+.enter {
+  font-size: 30px;
+}
+
+.input-field {
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.last {
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.red-text {
+  display: none;
+  text-align: center;
+  color: #bd0000;
+  font-size: 12px;
+}
+
+.input {
+	border: 1px solid #dcdcdc;
+	border-radius: 10px;
+	width: 50%;
+	height: 40px;
+	padding: 0 20px;
+	font-size: 14px;
+}
+
+input::placeholder {
+	color: rgba(11, 0, 65, 0.6);
+	font-size: 14px;
+}
+
+.password-forgot {
+	display: block;
+	font-size: 14px;
+	text-decoration: underline;
+	color: #7c83f8;
+	margin: 5px 0;
+}
+
+.btn {
+	border: none;
+	color: #ffffff;
+	font-weight: 600;
+	background-color: #0c005c;
+}
+
+.btn-auth {
+	margin: 20px 0;
+	padding: 0 20px;
+	border-radius: 10px;
+	font-size: 18px;
+	height: 30px;
+}
+
+.a-btn:active,
+.a-btn:hover,
+.a-btn {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nuans {
+  border: none;
+  text-decoration: underline;
+}
+
+.ro {
+  display: none;
+  font-size: 18px;
+}
+
+/* главная страница */
+
+.main-home {
+  background-color: #0000b2;
+}
+
+.container-img {
+  float: right;
+  width: 38%;
+  height: 34%;
+  margin-right: 10%;
+  background-image: url(../img/man.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-text {
+  float: left;
+  height: 29vh;
+  margin-left: 6%;
+}
+
+.text-hello {
+  margin-top: 8%;
+  font-size: 2vw;
+  color: #fff;
+  display: block;
+}
+
+.text-go-work {
+  margin-top: 14%;
+  font-size: 4vw;
+  color: #c0cdff;
+  font-weight: 700;
+  display: block;
+}
+
+.container-tab {
+  display: flex;
+  width: 40%;
+  height: 6vh;
+}
+
+.tab {
+  width: 30%;
+  height: 100%;
+  background-color: #f7f8fc;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-img {
+  width: 24px;
+  height: 24px;
+}
+
+.tab-off {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-img {
+  width: 10%;
+}
+
+.a-tab {
+  display: inline-block;
+  font-size: 1vw;
+  color: #0c005c;
+}
+
+.a-tab-off {
+  display: inline-block;
+  font-size: 1vw;
+  color: #f7f8fc;
+}
+
+.field-work {
+  background-color: #f7f8fc;
+  width: 100%;
+  height: 65vh;
+  overflow: auto;
+}
+
+.form {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.field-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.field-form-first {
+  margin-top: 20px;
+}
+
+.input-form {
+  width: 50%;
+  height: 25px;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.text-input {
+  color: #0c005c;
+}
+
+.field-btn {
+  text-align: center;
+}
+
+.btn-form {
+  padding: 10px 20px;
+  border-radius: 8px;
+	font-size: 14px;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #0c005c;
+	border: 1px solid #dcdcdc;
+}
+
+/* таблица HOME страница*/
+
+.table {
+  margin-top: 20px;
+  color: #0c005c;
+  text-align: center;
+}
+
+.a-table:active,
+.a-table:hover,
+.a-table {
+  color: #0c005c;
+}
+
+td {
+  padding: 8px 6px;
+}
+tr:hover td {background: #e8edff;}
+
+.a-back:active,
+.a-back:hover,
+.a-back {
+  color: #0c005c;
+  font-size: 12px;
+  margin-top: 10px;
+  display: block; 
+  text-align: center;
+}
+
+/* обработчики */
+
+.title-obr {
+  margin-top: 60px;
+  text-align: center;
+  color: #0c005c;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.a-obr {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+

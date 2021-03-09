@@ -11,6 +11,7 @@
 
 Добавив папку в корень сервера, переходим по адресу:
 
-http://localhost/admin/
+http://localhost/
+php-admin-panel/
 
 
